@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+	#landing {
+		background: rgba(16, 198, 182,1);
+
+		.main-row {
+			display: flex;
+			flex-direction: column-reverse ;
+		}
+
+		.left-landing {
+			text-align: center;
+
+			h1,h4,h5,h5 span { color:var(--color-dark-blue) !important; }
+		}
+
+	    img {
+	        max-width: 100%;
+	    }
+	}
+}
