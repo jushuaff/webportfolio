@@ -42,9 +42,8 @@ body { position:relative; }
 /*--------------------------------------------------------------
 3.0 Links
 --------------------------------------------------------------*/
-    a { text-decoration: none; }
-    a:focus { outline: 0; }
-
+    a,
+    a:focus,
     a:hover,
     a:active {
         /*color:*/
@@ -91,9 +90,10 @@ body { position:relative; }
         .btn-dark-blue:active,
         .btn-dark-blue.active,
         .open > .dropdown-toggle.btn-blue {
-          color: var(--color-dark-blue) !important;
-          background-color: white !important;
-          border: 1px solid var(--color-dark-blue);
+            transition: 0.3s ease;
+            color: var(--color-dark-blue) !important;
+            background-color: white !important;
+            border: 1px solid var(--color-dark-blue);
         }
 
     .btn-green {
@@ -106,6 +106,7 @@ body { position:relative; }
         .btn-green:active,
         .btn-green.active,
         .open > .dropdown-toggle.btn-blue {
+            transition: 0.3s ease;
           color: var(--color-green) !important;
           background-color: white !important;
           border: 1px solid var(--color-green);
